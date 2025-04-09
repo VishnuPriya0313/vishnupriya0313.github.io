@@ -1,63 +1,157 @@
-/* Cascading stylesheet for the website */
+/* Reset & Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+a { text-decoration: none; color: #0073e6; }
+a:hover { text-decoration: underline; }
 
-/* Text inside these asterisks and slashes are comments for human */
+/* NAVIGATION */
+nav {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container h2 {
+  font-size: 1.5rem;
+  color: #f0a500;
+}
+nav ul { list-style: none; display: flex; }
+nav ul li { margin: 0 15px; }
+nav ul li a {
+  font-weight: 600;
+  transition: color 0.3s;
+  color: #333;
+}
+nav ul li a:hover { color: #f0a500; }
 
-  a {
-    color: blue;/* set the text color to blue here */
-    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
-  }
+/* HERO / BANNER */
+header {
+  width: 100%;
+  height: auto;
+  background: 
+    linear-gradient(rgba(155, 148, 148, 0.5), rgba(0,0,0,0.5)),
+no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+header .hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+header h1 { font-size: 3rem; margin-bottom: 1rem; }
+header p { font-size: 1.2rem; margin-bottom: 2rem; }
+header .hero-btn {
+  display: inline-block;
+  background-color: #f0a500;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+header .hero-btn:hover { background-color: #cf8800; }
 
-  a:hover {
-    color: red;/* set the text color to red here */
-    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
-  }
+/* MAIN CONTENT CONTAINER */
+main { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
+section {
+  margin-bottom: 60px;
+  opacity: 0; transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+section.show { opacity: 1; transform: translateY(0); }
+section h2 {
+  font-size: 2rem; text-align: center;
+  margin-bottom: 30px; position: relative;
+}
+section h2::after {
+  content: "";
+  width: 70px; height: 3px;
+  background: #f0a500;
+  position: absolute; bottom: -10px;
+  left: 50%; transform: translateX(-50%);
+}
 
-  body {
-    background-color: #D3D3D3;/* set the background color here */
-    color: black;/* set the text color to black here */
-    font-family: Arial, Helvetica, sans-serif;/* set the font here */
-    text-align: center;/* set the text alignment here */
-   }
+/* ABOUT SECTION */
+#about .about-content {
+  display: flex; flex-wrap: wrap; gap: 40px;
+  align-items: center; justify-content: center;
+}
+#about .about-text { flex: 1 1 400px; }
+#about .about-text p { margin-bottom: 15px; }
+#about .about-img { flex: 1 1 400px; text-align: center; }
+#about .about-img img {
+  width: 300px; max-width: 100%; border-radius: 8px;
+}
 
-  footer {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+/* CREDENTIALS / PORTFOLIO */
+#credentials p { text-align: center; font-size: 1.1rem; }
 
-  h1 {
-    margin-bottom: 0.5rem;
-    margin-top: 3rem;
-   }
+/* CARD GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; margin-bottom: 40px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+.card p { margin-bottom: 10px; }
+.card ul { list-style: disc; margin-left: 20px; }
 
-  h2 {
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-    color: #075AAB/* set the text color of to #075AAB here */
-    /* set both the bottom margin and top margin to 2.5rem here */
-   }
+/* CONTACT */
+#contact .contact-info {
+  display: flex; flex-wrap: wrap;
+  align-items: center; justify-content: center;
+  gap: 40px;
+}
+#contact .contact-info div { flex: 1 1 300px; text-align: center; }
 
-  h3 {
-    margin-bottom: 0;
-    margin-top: 2rem;
-  }
+/* FOOTER */
+footer {
+  background: #333; color: #fff;
+  text-align: center; padding: 30px 20px;
+}
+footer p { margin-bottom: 10px; }
+footer .social-links a {
+  color: #fff; margin: 0 10px; font-size: 1.2rem;
+}
 
-  h4 {
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  h5 {
-    margin-top: 0.5rem;
-  }
-
-  hr {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-  }
-
-  /* this controls how the bullet points in the resume page looks */
-  ul {
-    display: table;
-    margin: 0 auto;
-    text-align: left;
-  }
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  header h1 { font-size: 2rem; }
+  header p { font-size: 1rem; }
+}

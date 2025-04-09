@@ -1,41 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vishnupriya's portfolio - A professional software engineer specialized in backend development and system design.">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Vishnupriya's Portfolio</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vishnupriya's portfolio and resume – A professional software engineer specialized in backend development and system design." />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Vishnupriya's Portfolio & Resume</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/master.css" />
   </head>
   <body>
-    <header>
-      <img src="images/banner.jpg" alt="Banner" style="width:100%; height:auto; display:block; object-fit:cover;">
-      <h1>Vishnupriya's Portfolio</h1>
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="nav-container">
+        <h2>Vishnupriya</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- HERO SECTION -->
+    <header id="home">
+      <div class="hero-content">
+        <h1>Vishnupriya</h1>
+        <p>Software Engineer</p>
+      </div>
     </header>
+    
+    <!-- MAIN CONTENT -->
     <main>
-      <section>
+      <!-- ABOUT SECTION -->
+      <section id="about">
         <h2>About Me</h2>
-        <p>I am a software engineer with a strong focus on backend development and system design. After transitioning from electronics to software engineering, I gained hands-on experience in Java, Spring Boot, RESTful APIs, and agile practices. I have 2 years of experience at Infosys, where I contributed to backend services for an e-commerce platform. I completed my Master's in Computer Science from Lewis University, where I specialized in software engineering.</p>
-        <p>Beyond my professional experience, I have worked on personal and academic projects including full-stack development and machine learning models. I am committed to writing clean, efficient code and continuously learning new technologies to contribute to meaningful, innovative solutions.</p>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a software engineer with a strong focus on backend development and system design. After transitioning from electronics to software engineering, I gained hands-on experience in Java, Spring Boot, RESTful APIs, and agile practices. I have 2 years of experience at Infosys, where I contributed to backend services for an e-commerce platform. I completed my Master's in Computer Science from Lewis University, where I specialized in software engineering.
+            </p>
+            <p>
+              Beyond my professional experience, I have worked on personal and academic projects including full-stack development and machine learning models. I am committed to writing clean, efficient code and continuously learning new technologies to contribute to meaningful, innovative solutions.
+            </p>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Credentials and Portfolio</h2>
+      
+      <!-- CREDENTIALS & PORTFOLIO SECTION -->
+      <section id="credentials">
+        <h2>Credentials & Portfolio</h2>
         <p>
-          <a href="resume.html">My Resume</a> |
-          <a href="https://www.linkedin.com/in/vishnupriyadonga/" target="_blank" rel="noopener">LinkedIn</a> |
-          <a href="https://github.com/VishnuPriya0313" target="_blank" rel="noopener">My GitHub</a>
+          <a href="resume.html" target="_blank">My Resume</a> |
+          <a href="https://www.linkedin.com/in/vishnupriyadonga/" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/VishnuPriya0313" target="_blank">My GitHub</a>
         </p>
       </section>
-      <section>
+      
+      <!-- EDUCATION SECTION -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Lewis University, Romeoville</h3>
+            <p>M.S. Computer Science</p>
+          </div>
+          <div class="card">
+            <h3>Jawaharlal Nehru Technological University, Bhimavaram</h3>
+            <p>B.S. Electronics and Communication Engineering</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PROFESSIONAL EXPERIENCE SECTION -->
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Systems Engineer</h3>
+            <p><strong>Infosys, Hyderabad, India</strong><br>Sep 2021 – Aug 2023</p>
+            <p>
+              <strong>Tech Stack:</strong> Java, Spring Boot, REST APIs, JUnit, Swagger, Postman, SonarQube, Maven, XML, JSON, Git, Bitbucket, Confluence
+            </p>
+            <ul>
+              <li>Developed and maintained backend services for a US-based e-commerce application.</li>
+              <li>Worked on key modules including payments, address management, and cart/checkout.</li>
+              <li>Created and executed test cases to ensure high software quality.</li>
+              <li>Collaborated with cross-functional teams in Agile sprints.</li>
+              <li>Utilized tools such as Postman, Swagger, and JIRA.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>TODO Manager</h3>
+            <p>
+              <strong>Tech Stack:</strong> Java, Spring Boot, React, REST APIs, H2 Database, Maven, Postman
+            </p>
+            <ul>
+              <li>Built a full-stack task manager with Spring Boot (backend) and React (frontend).</li>
+              <li>Optimized database queries using JPA and validated APIs with Swagger/Postman.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Predictive Model for Student Mental Health</h3>
+            <p>
+              <strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Matplotlib
+            </p>
+            <ul>
+              <li>Conducted exploratory data analysis and engineered features to boost model accuracy.</li>
+              <li>Built machine learning models and leveraged data visualization for insights.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>KS Biryanis &amp; Pulihoras</h3>
+            <p>
+              <strong>Tech Stack:</strong> Django, HTML, CSS, GitHub
+            </p>
+            <ul>
+              <li>Created an online food ordering system with user authentication and dynamic menus.</li>
+              <li>Focused on a responsive UI to enhance user engagement.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <!-- TECHNICAL SKILLS SECTION -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Programming Languages</h3>
+            <p>Java, Python, C, SQL</p>
+          </div>
+          <div class="card">
+            <h3>Frameworks &amp; Tools</h3>
+            <p>Spring Boot, Django, Pandas, MATLAB</p>
+          </div>
+          <div class="card">
+            <h3>Web Technologies</h3>
+            <p>HTML, CSS, REST APIs, JSON, XML</p>
+          </div>
+          <div class="card">
+            <h3>Databases</h3>
+            <p>MySQL</p>
+          </div>
+          <div class="card">
+            <h3>Testing &amp; API</h3>
+            <p>JUnit, Postman, Swagger</p>
+          </div>
+          <div class="card">
+            <h3>Project Management</h3>
+            <p>JIRA, Confluence, Bitbucket</p>
+          </div>
+          <div class="card">
+            <h3>Version Control</h3>
+            <p>Git, GitHub</p>
+          </div>
+          <div class="card">
+            <h3>Operating Systems</h3>
+            <p>Linux (Ubuntu, Kali), Windows</p>
+          </div>
+          <div class="card">
+            <h3>Other Tools</h3>
+            <p>SonarQube, Maven</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- CONTACT SECTION -->
+      <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:vishnupriya.donga13@gmail.com">vishnupriya.donga13@gmail.com</a></p>
+        <div class="contact-info">
+          <div>
+            <p><strong>Email:</strong> <a href="mailto:vishnupriya.donga13@gmail.com">vishnupriya.donga13@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishnupriyadonga/" target="_blank">vishnupriyadonga</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/VishnuPriya0313" target="_blank">VishnuPriya0313</a></p>
+          </div>
+        </div>
       </section>
     </main>
+    
+    <!-- FOOTER -->
     <footer>
-      <hr>
       <p>&copy; 2025 Vishnupriya</p>
+      <p class="social-links">
+        <a href="https://www.linkedin.com/in/vishnupriyadonga/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/VishnuPriya0313" target="_blank">GitHub</a>
+      </p>
     </footer>
+    
+    <!-- Inline JavaScript: Reveal sections on scroll & Smooth internal scrolling -->
+    <script>
+      // Reveal sections when scrolling into view
+      const sections = document.querySelectorAll("section");
+      const revealOnScroll = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+      const observer = new IntersectionObserver(revealOnScroll, { threshold: 0.1 });
+      sections.forEach(section => observer.observe(section));
+      
+      // Smooth scrolling for internal nav links
+      const navLinks = document.querySelectorAll("nav ul li a");
+      navLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+          if (this.getAttribute("href").startsWith("#")) {
+            e.preventDefault();
+            const targetID = this.getAttribute("href");
+            const targetSection = document.querySelector(targetID);
+            if (targetSection) {
+              window.scrollTo({ top: targetSection.offsetTop - 50, behavior: "smooth" });
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
