@@ -30,16 +30,12 @@
         z-index: 1000;
       }
       nav .nav-container {
-        max-width: 1200px;
+        max-width: 250px;
         margin: 0 auto;
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-      nav .nav-container h2 {
-        font-size: 1.5rem;
-        color: #f0a500;
       }
       nav ul { list-style: none; display: flex; }
       nav ul li { margin: 0 15px; }
@@ -63,9 +59,32 @@
         text-align: center;
         color: #fff;
       }
+  
       header .hero-content {
-        max-width: 800px;
-        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      header .hero-content img {
+        margin-right: 100px;
+        border-radius: 50%;
+      }
+
+      header.text-content {
+        text-align: center;
+      }
+
+      header.text-content h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      header.text-content p {
+        margin: 5px 0 0;
+        font-size: 16px;
+        color: #555;
       }
       header h1 { font-size: 3rem; margin-bottom: 1rem; }
       header p { font-size: 1.2rem; margin-bottom: 2rem; }
@@ -172,7 +191,6 @@
     <!-- NAVIGATION -->
     <nav>
       <div class="nav-container">
-        <h2>Vishnupriya</h2>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -189,8 +207,11 @@
     <!-- HERO SECTION -->
     <header id="home">
       <div class="hero-content">
-        <h1>Vishnupriya</h1>
+        <img src="images/vishnu.jpg" alt="Vishnupriya" style="width:180px; height:180px; display:block; object-fit:cover;">
+        <div class="text-content">
+          <h1>Vishnupriya</h1>
         <p>Software Engineer</p>
+        </div>
       </div>
     </header>
     
